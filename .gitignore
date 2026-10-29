@@ -1,0 +1,40 @@
+# Python / Django
+backend/.venv/
+backend/**/__pycache__/
+backend/**/*.py[cod]
+backend/**/*.egg-info/
+backend/db.sqlite3
+backend/*.sqlite3
+backend/staticfiles/
+backend/media/
+backend/.env
+backend/.env.*
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/*.local
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs / cache
+*.log
+npm-debug.log*
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local reference clone (if present)
+mettos_website_ref/
