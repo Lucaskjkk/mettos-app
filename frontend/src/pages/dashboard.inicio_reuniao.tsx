@@ -26,13 +26,23 @@ export function StartMeetingPage() {
       <div className="mt-12 grid md:grid-cols-2 gap-6">
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <button className="group text-left rounded-2xl border hairline bg-foreground text-background p-10 hover-lift grain relative overflow-hidden">
-              <Mic className="h-7 w-7" strokeWidth={1.5} />
-              <h3 className="mt-8 font-display text-3xl tracking-tight font-semibold">Start now</h3>
-              <p className="mt-3 text-sm opacity-70">
+            <button className="group text-left rounded-2xl border hairline bg-foreground text-background p-10 hover-lift relative overflow-hidden cursor-pointer">
+              <span
+                className="pointer-events-none absolute -top-16 -left-16 h-40 w-40 rounded-full bg-white/20 blur-3xl"
+                aria-hidden
+              />
+              <span
+                className="pointer-events-none absolute -bottom-20 -right-16 h-44 w-44 rounded-full bg-white/15 blur-3xl"
+                aria-hidden
+              />
+              <Mic className="relative h-7 w-7" strokeWidth={1.5} />
+              <h3 className="relative mt-8 font-display text-3xl tracking-tight font-semibold">
+                Start now
+              </h3>
+              <p className="relative mt-3 text-sm opacity-70">
                 Starts recording, transcription and topic detection in real time.
               </p>
-              <span className="mt-8 inline-flex items-center gap-2 text-sm">Start →</span>
+              <span className="relative mt-8 inline-flex items-center gap-2 text-sm">Start →</span>
             </button>
           </DialogTrigger>
           <DialogContent className="max-w-lg">
@@ -71,7 +81,7 @@ export function StartMeetingPage() {
           </DialogContent>
         </Dialog>
 
-        <div className="rounded-2xl border hairline bg-card p-10 hover-lift">
+        <div className="rounded-2xl border hairline surface p-10 hover-lift">
           <Calendar className="h-7 w-7" strokeWidth={1.5} />
           <h3 className="mt-8 font-display text-3xl tracking-tight font-semibold">Schedule</h3>
           <p className="mt-3 text-sm text-muted-foreground">

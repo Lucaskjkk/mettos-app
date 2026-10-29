@@ -24,7 +24,7 @@ export function TeamPage() {
         </Button>
       </div>
 
-      <div className="mt-10 border hairline rounded-2xl bg-card overflow-hidden">
+      <div className="mt-10 border hairline rounded-2xl surface overflow-hidden">
         <div className="grid grid-cols-[1.5fr_1.5fr_0.6fr_0.6fr] px-6 py-3 text-[10px] uppercase tracking-widest text-muted-foreground border-b hairline">
           <span>Nome</span>
           <span>Email</span>

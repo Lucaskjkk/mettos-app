@@ -20,8 +20,8 @@ export function FlowchartsPage() {
 
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl border hairline overflow-hidden">
         {flows.map((f) => (
-          <div key={f.t} className="bg-card p-6 hover-lift">
-            <div className="aspect-[4/3] border hairline rounded-lg bg-background grid place-items-center text-muted-foreground">
+          <div key={f.t} className="surface p-6 hover-lift">
+            <div className="aspect-[4/3] border hairline rounded-lg surface-strong grid place-items-center text-muted-foreground">
               <svg
                 viewBox="0 0 200 140"
                 className="w-3/4 h-auto"

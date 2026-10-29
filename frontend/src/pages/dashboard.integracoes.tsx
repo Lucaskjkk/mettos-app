@@ -20,7 +20,7 @@ export function IntegrationsPage() {
 
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl border hairline overflow-hidden">
         {tools.map((t) => (
-          <div key={t.t} className="bg-card p-6 flex flex-col">
+          <div key={t.t} className="surface p-6 flex flex-col">
             <div className="flex items-start justify-between">
               <div className="h-10 w-10 rounded-md bg-foreground text-background grid place-items-center font-medium">
                 {t.t[0]}

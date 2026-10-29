@@ -55,14 +55,14 @@ export function TasksPage() {
 
       <div className="mt-10 grid md:grid-cols-3 gap-6">
         {cols.map((c) => (
-          <div key={c.name} className="border hairline rounded-2xl bg-card p-5">
+          <div key={c.name} className="border hairline rounded-2xl surface p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="font-medium text-sm">{c.name}</h2>
               <span className="text-xs text-muted-foreground font-mono">{c.items.length}</span>
             </div>
             <div className="space-y-3">
               {c.items.map((it) => (
-                <div key={it.t} className="border hairline rounded-lg p-3 bg-background hover-lift">
+                <div key={it.t} className="border hairline rounded-lg p-3 surface-strong hover-lift">
                   <div className="flex items-start gap-2">
                     <Checkbox className="mt-0.5" defaultChecked={c.name === "Done"} />
                     <div className="flex-1">

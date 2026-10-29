@@ -32,7 +32,7 @@ export function DashboardOverview() {
 
       <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl border hairline overflow-hidden">
         {kpis.map((k) => (
-          <div key={k.l} className="bg-background p-6">
+          <div key={k.l} className="surface-strong p-6">
             <p className="text-xs text-muted-foreground">{k.l}</p>
             <div className="mt-3 font-display text-3xl tracking-tight font-semibold">{k.v}</div>
             <div
@@ -46,7 +46,7 @@ export function DashboardOverview() {
       </div>
 
       <div className="mt-8 grid lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 border hairline rounded-2xl bg-card p-6">
+        <div className="lg:col-span-2 border hairline rounded-2xl surface p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="font-medium">Time by topic · last 30 days</h2>
             <span className="text-xs text-muted-foreground font-mono">42h total</span>
@@ -76,7 +76,7 @@ export function DashboardOverview() {
           </div>
         </div>
 
-        <div className="border hairline rounded-2xl bg-card p-6">
+        <div className="border hairline rounded-2xl surface p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="font-medium">Upcoming meetings</h2>
             <Link

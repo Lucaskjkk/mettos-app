@@ -77,7 +77,19 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader className="border-b border-sidebar-border">
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage: "radial-gradient(rgba(255,255,255,0.45) 1px, transparent 1px)",
+            backgroundSize: "4px 4px",
+          }}
+        />
+        <div className="absolute -top-16 -left-10 h-44 w-44 rounded-full bg-white/[0.06] blur-3xl animate-float-slow" />
+        <div className="absolute -bottom-10 -right-12 h-52 w-52 rounded-full bg-white/[0.05] blur-3xl animate-float-slow-reverse" />
+        <div className="absolute left-0 right-0 top-[40%] h-px bg-gradient-to-r from-transparent via-white/20 to-transparent animate-scan-x opacity-50" />
+      </div>
+      <SidebarHeader className="relative z-10 border-b border-sidebar-border">
         <Link to="/dashboard" className="flex items-center gap-2 px-2 py-1.5">
           <div className="h-7 w-7 rounded-md bg-sidebar-primary text-sidebar-primary-foreground grid place-items-center text-[11px] font-semibold shrink-0">
             M
@@ -85,7 +97,7 @@ export function AppSidebar() {
           {!collapsed && <span className="font-semibold text-sidebar-foreground">Minuta</span>}
         </Link>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="relative z-10">
         {groups.map((g) => (
           <SidebarGroup key={g.label}>
             {!collapsed && (

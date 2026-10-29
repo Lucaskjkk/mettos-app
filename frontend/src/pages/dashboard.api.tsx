@@ -8,7 +8,7 @@ export function ApiPage() {
       <h1 className="mt-2 font-display text-4xl tracking-tight font-semibold">API & Developers</h1>
       <p className="mt-2 text-sm text-muted-foreground">Integrate Minuta with your own systems.</p>
 
-      <div className="mt-10 border hairline rounded-2xl bg-card p-8">
+      <div className="mt-10 border hairline rounded-2xl surface p-8">
         <h2 className="font-medium">API Keys</h2>
         <div className="mt-4 space-y-3">
           {[
@@ -17,7 +17,7 @@ export function ApiPage() {
           ].map((k) => (
             <div
               key={k.n}
-              className="border hairline rounded-lg bg-background p-4 flex items-center justify-between"
+              className="border hairline rounded-lg surface-strong p-4 flex items-center justify-between"
             >
               <div>
                 <div className="text-xs uppercase tracking-widest text-muted-foreground">{k.n}</div>
@@ -31,7 +31,7 @@ export function ApiPage() {
         </div>
       </div>
 
-      <div className="mt-8 border hairline rounded-2xl bg-foreground text-background p-8 grain">
+      <div className="mt-8 border hairline rounded-2xl bg-foreground text-background p-8 ink">
         <p className="text-xs uppercase tracking-widest opacity-70">Example · cURL</p>
         <pre className="mt-4 font-mono text-xs leading-relaxed overflow-x-auto">
           {`curl https://api.minuta.app/v1/meetings \\
@@ -50,7 +50,7 @@ export function ApiPage() {
           { t: "Webhooks", d: "Receive events in real time." },
           { t: "OAuth Apps", d: "Build integrations for the marketplace." },
         ].map((x) => (
-          <div key={x.t} className="bg-card p-6 hover-lift">
+          <div key={x.t} className="surface p-6 hover-lift">
             <div className="font-medium">{x.t}</div>
             <p className="text-sm text-muted-foreground mt-2">{x.d}</p>
           </div>

@@ -8,7 +8,7 @@ export function BillingPage() {
       <h1 className="mt-2 font-display text-4xl tracking-tight font-semibold">Billing</h1>
 
       <div className="mt-10 grid md:grid-cols-3 gap-px bg-border rounded-2xl border hairline overflow-hidden">
-        <div className="md:col-span-2 bg-card p-8">
+        <div className="md:col-span-2 surface p-8">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">Current Plan</p>
           <div className="flex items-baseline justify-between mt-3">
             <h2 className="font-display text-3xl tracking-tight font-semibold">Medium</h2>
@@ -24,7 +24,7 @@ export function BillingPage() {
             <Button variant="outline">Cancel</Button>
           </div>
         </div>
-        <div className="bg-card p-8">
+        <div className="surface p-8">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
             Usage this month
           </p>
@@ -49,7 +49,7 @@ export function BillingPage() {
         </div>
       </div>
 
-      <div className="mt-8 border hairline rounded-2xl bg-card overflow-hidden">
+      <div className="mt-8 border hairline rounded-2xl surface overflow-hidden">
         <div className="px-6 py-3 border-b hairline text-[10px] uppercase tracking-widest text-muted-foreground grid grid-cols-4">
           <span>Data</span>
           <span>Descrição</span>

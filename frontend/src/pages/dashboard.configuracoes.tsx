@@ -33,7 +33,7 @@ export function SettingsPage() {
           <Toggle label="Flowchart generation after each meeting" defaultChecked />
           <Toggle label="Summary sent by email" />
         </Section>
-        <div className="bg-card p-6 flex justify-end">
+        <div className="surface p-6 flex justify-end">
           <Button>Save changes</Button>
         </div>
       </div>
@@ -43,7 +43,7 @@ export function SettingsPage() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-card p-6">
+    <div className="surface p-6">
       <h2 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">{title}</h2>
       <div className="space-y-4">{children}</div>
     </div>

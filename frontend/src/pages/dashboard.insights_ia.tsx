@@ -35,7 +35,7 @@ export function InsightsPage() {
         Patterns, bottlenecks and recommendations detected across all your meetings.
       </p>
 
-      <div className="mt-10 border hairline rounded-2xl bg-card p-6">
+      <div className="mt-10 border hairline rounded-2xl surface p-6">
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">
           Semantic search
         </p>
@@ -50,7 +50,7 @@ export function InsightsPage() {
 
       <div className="mt-8 grid md:grid-cols-2 gap-px bg-border rounded-2xl border hairline overflow-hidden">
         {cards.map((c) => (
-          <div key={c.t} className="bg-background p-8 hover-lift">
+          <div key={c.t} className="surface-strong p-8 hover-lift">
             <c.i className="h-5 w-5" strokeWidth={1.5} />
             <h3 className="mt-6 font-medium">{c.t}</h3>
             <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{c.d}</p>

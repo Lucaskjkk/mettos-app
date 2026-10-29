@@ -23,7 +23,7 @@ export function DashboardHeader() {
   }
 
   return (
-    <header className="h-14 border-b hairline flex items-center px-4 gap-3 bg-background/80 backdrop-blur-md sticky top-0 z-30">
+    <header className="h-14 border-b hairline flex items-center px-4 gap-3 bg-background/55 backdrop-blur-md sticky top-0 z-30">
       <SidebarTrigger />
       <div className="hidden md:flex items-center gap-2 flex-1 max-w-md">
         <div className="relative w-full">
