@@ -105,7 +105,7 @@ export function AppSidebar() {
                         tooltip={it.title}
                         className={
                           it.accent
-                            ? "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90 data-[active=true]:bg-sidebar-primary"
+                            ? "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90 hover:text-sidebar-primary-foreground active:bg-sidebar-primary active:text-sidebar-primary-foreground data-[active=true]:bg-sidebar-primary data-[active=true]:text-sidebar-primary-foreground"
                             : ""
                         }
                       >
